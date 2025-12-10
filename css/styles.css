@@ -2,7 +2,13 @@
     margin: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: 
-    "searchbar searchbar searchbar"
-    
+}
+
+#searchBar {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
 }
