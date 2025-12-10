@@ -1,4 +1,8 @@
 .gallery { 
+    margin: auto;
     display: grid;
-    grid-template-columns: 200px 200px 200px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "searchbar searchbar searchbar"
+    
 }
