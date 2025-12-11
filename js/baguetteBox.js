@@ -802,4 +802,6 @@
         hide: hideOverlay,
         destroy: destroyPlugin
     };
+
+
 }));
