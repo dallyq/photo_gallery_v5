@@ -1,14 +1,30 @@
-.gallery { 
-    display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
-    grid-template-rows: repeat(3, 200px);
-    grid-gap: 25px;
+body {
+  margin: 0;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container { 
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 #searchBar {
-  width: 500px;
-  padding: 15px;
-  font-size: 13px;
+  margin: 0 auto 40px auto;
+  width: 560px;
+  padding: 18px 15px;
+  font-size: 14px;
   border: 2px solid #d7d7d7;
-  border-radius: 7px;
+  border-radius: 8px;
+  display: block;
+}
+
+.gallery {
+  display: grid;
+  margin: 0 auto;
+  justify-content: center;
+  grid-template-columns: repeat(4, 200px);
+  gap: 25px 25px;
 }
