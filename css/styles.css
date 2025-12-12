@@ -30,9 +30,9 @@ body,
   width: 100%;
   grid-auto-rows: minmax(150px, auto);
   grid-template-areas: 
-  "search search"
-  "gallery gallery"
-  "gallery gallery";
+  "search"
+  "gallery"
+  "gallery";
 }
 
 /*768px and up (3 Column layout) */
