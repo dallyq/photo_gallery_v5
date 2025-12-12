@@ -26,6 +26,7 @@ body,
 
 /* Media Queries */
 .container { 
+  display: grid;
   width: 100%;
   grid-auto-rows: minmax(150px, auto);
   grid-template-areas: 
@@ -47,7 +48,7 @@ body,
 @media (min-width: 992px) {
   .container {
     grid-template-areas: 
-    "search search search"
+    "search search"
     "gallery gallery gallery";
   }
 }
