@@ -13,6 +13,7 @@ body,
   border: 2px solid #d7d7d7;
   border-radius: 8px;
   display: block;
+  grid-area: search;
 }
 
 .gallery {
@@ -20,6 +21,7 @@ body,
   justify-content: center;
   grid-template-columns: repeat(4, 200px);
   gap: 25px 25px;
+  grid-area: gallery;
 }
 
 /* Media Queries */
