@@ -1,16 +1,21 @@
+body, 
+.container, 
+#search,
+.gallery {
+  margin: 0 auto;
+}
+
 body {
-  margin: 0;
   padding: 40px 0;
 }
 
 .container { 
   width: 100%;
   max-width: 1000px;
-  margin: 0 auto;
 }
 
 #search {
-  margin: 0 auto 40px auto;
+  margin: 40px auto;
   width: 560px;
   padding: 18px 15px;
   font-size: 14px;
@@ -21,7 +26,6 @@ body {
 
 .gallery {
   display: grid;
-  margin: 0 auto;
   justify-content: center;
   grid-template-columns: repeat(4, 200px);
   gap: 25px 25px;
