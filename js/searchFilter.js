@@ -1,11 +1,12 @@
-const authorSearch = document.getElementById('authorSearch'); 
-authorSearch.addEventListener('keyup', e => { 
+const imageSearch = document.getElementById('search'); 
+imageSearch.addEventListener('keyup', e => { 
     let currentValue = e.target.value.toLowerCase(); 
-    let authors = document.querySelectorAll('h1.title'); 
+    let authors = document.querySelectorAll('nature'); 
     authors.forEach(author => { 
-        if (author.textContent.toLowerCase().includes(currentValue)) { 
-            author.parentNode.parentNode.style.display = 'block'; 
-        } else { author.parentNode.parentNode.style.display = 'none'; 
+        if (author.getAttribute('data-caption').toLowerCase().includes(currentValue)) { 
+            author.parentNode.style.display = 'block'; 
+        } else { 
+            author.parentNode.style.display = 'none'; 
         } 
     }); 
 });
