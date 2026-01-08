@@ -1,7 +1,8 @@
 const imageSearch = document.getElementById('search'); 
 imageSearch.addEventListener('keyup', e => { 
     let currentValue = e.target.value.toLowerCase(); 
-    let authors = document.querySelectorAll('nature'); 
+    console.log(currentValue);
+    let authors = document.querySelectorAll('.gallery a'); 
     authors.forEach(author => { 
         if (author.getAttribute('data-caption').toLowerCase().includes(currentValue)) { 
             author.parentNode.style.display = 'block'; 
@@ -10,3 +11,5 @@ imageSearch.addEventListener('keyup', e => {
         } 
     }); 
 });
+
+baguetteBox.run('.gallery');
