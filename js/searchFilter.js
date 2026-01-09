@@ -5,9 +5,9 @@ imageSearch.addEventListener('keyup', e => {
     let captions = document.querySelectorAll('.gallery .potato'); 
     captions.forEach(datacaption => { 
         if (datacaption.getAttribute('data-caption').toLowerCase().includes(currentValue)) { 
-            datacaption.parentNode.style.display = 'block'; 
+            datacaption.style.display = 'block'; 
         } else { 
-            datacaption.parentNode.style.display = 'none'; 
+            datacaption.style.display = 'none'; 
         } 
     }); 
 });
