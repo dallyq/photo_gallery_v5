@@ -32,11 +32,11 @@ img {
 }
 
 .container { 
-  max-width: 980px;
   margin: 0 auto;
   padding: 0 20px 0 20px;
   display: grid;
   width: 100%;
+  max-width: 980px;
   grid-auto-rows: minmax(150px, auto);
   grid-template-areas: 
   "search"
